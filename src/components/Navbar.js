@@ -25,7 +25,7 @@ const Navbar = () => {
                         <li className="nav-item">
                             <button type="button" className={"btn btn-danger btn-sm"}>
                                 <Link to={"/map"} className={"nav-link"}>
-                                    Test 1
+                                    Map
                                 </Link>
                             </button>
                         </li>
