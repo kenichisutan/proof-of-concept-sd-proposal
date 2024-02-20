@@ -14,7 +14,11 @@ def proof_of_concept(connection):
         return jsonify({"error": True,
                         "message": "No entries found"}), 404
 
-    # Return the first entry
-    result = cursor.fetchone()
+    # Convert result to json
+    jsonResult = [ ]
+    for(ID, entry) in cursor:
+        jsonResult.append({'ID': ID,
+                           'entry': entry})
+
     cursor.close()
-    return jsonify({"entry": result}), 200
+    return jsonResult, 200
