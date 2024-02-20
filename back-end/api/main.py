@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
 import database
+import entries
 
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
@@ -8,7 +9,7 @@ CORS(app, supports_credentials=True)
 
 @app.route('/proof-of-concept', methods=[ 'GET' ])
 def api_proof_of_concept():
-    return "Proof of concept"
+    return entries.proof_of_concept(con)
 
 
 if __name__ == '__main__':
