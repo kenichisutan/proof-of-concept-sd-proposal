@@ -29,8 +29,7 @@ const Home = () => {
             <h2>Home</h2>
             <br/>
             <br/>
-            <h1>Test: {text}</h1>
-            <button type="submit" className="btn btn-outline-danger" onClick={handleSubmit}>Decline</button>
+            <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-75.36861419677734%2C39.85730997290123%2C-74.96006011962892%2C40.04575171819509&amp;layer=mapnik&amp;marker=39.95159574030591%2C-75.16433715820312"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=39.9516&amp;mlon=-75.1643#map=12/39.9516/-75.1643">View Larger Map</a></small>
         </div>
     )
 }
